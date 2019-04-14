@@ -59,6 +59,8 @@ CTextAdventureDlg::CTextAdventureDlg(CWnd* pParent /*=nullptr*/)
 void CTextAdventureDlg::DoDataExchange(CDataExchange* pDX)
 {
 	CDialogEx::DoDataExchange(pDX);
+	DDX_Control(pDX, IDC_CONSOLE, m_ctrlConsole);
+	DDX_Control(pDX, IDC_SCROLLBAR_CONSOLE, m_ctrlScrollBarConsole);
 }
 
 BEGIN_MESSAGE_MAP(CTextAdventureDlg, CDialogEx)

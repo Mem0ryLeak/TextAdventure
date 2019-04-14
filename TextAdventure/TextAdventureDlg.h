@@ -1,11 +1,12 @@
 
 // TextAdventureDlg.h: Headerdatei
 //
-
 #pragma once
+#include "ConsoleCtrl.h"
 
 
 // CTextAdventureDlg-Dialogfeld
+
 class CTextAdventureDlg : public CDialogEx
 {
 // Konstruktion
@@ -31,4 +32,7 @@ protected:
 	afx_msg void OnPaint();
 	afx_msg HCURSOR OnQueryDragIcon();
 	DECLARE_MESSAGE_MAP()
+public:
+	CConsoleCtrl m_ctrlConsole;
+	CScrollBar m_ctrlScrollBarConsole;
 };
